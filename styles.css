@@ -6,19 +6,16 @@ body {
 #phone {
   height: 190.08mm;
   width: 93.2mm;
-  border: black 2px solid;
   margin: 50px auto;
   border-radius: 26px;
   background-color: black;
-  position: absolute;
   left: 580px;
 }
 
 #screen {
   height: 590px;
   width: 325px;
-  border: black 1px solid;
-  margin: 60px auto;
+  margin: 10px auto;
   border-radius: 1px;
   background-image: url(images/wallpaper.jpeg);
   background-size: cover;
@@ -28,16 +25,17 @@ body {
 .lockscreen-shade {
   height: 560;
   width: 325px;
+  position: relative;
   background: black;
-  overflow: hidden;
   color: white;
 }
 
 #lockscreen {
   height: 590px;
   width: 325px;
-  border: black 1px solid;
-  margin: 60px auto;
+  position: relative;
+  top: -7em;
+  margin: 10px auto;
   border-radius: 1px;
   background-image: url(images/wallpaper.jpeg);
   background-size: cover;
@@ -49,29 +47,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: bold;
-  position: absolute;
   font-size: 55px;
-  top: 110px;
-  left: 58px;
-
+  position: relative;
+  top: 1em;
+  left: 1em;
+  
 }
 
 #unlock-prompt{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  position: absolute;
-  top: 600px;
+  position: relative;
+  top: 30em;
   left: 95px;
   
 }
 
 .grid-container {
-  padding: 2px;
-  margin: 10px auto auto;
+  padding: 1em;
+  margin: .5em auto auto;
   display: grid;
-  height: 510px;
-  column-gap: 3px;
-  row-gap: -40px;
+  height: 31em;
+  column-gap: 1em;
+  row-gap: .2em;
   justify-content: space-evenly;
   grid-template-columns: auto auto auto auto;
 }
@@ -115,8 +113,8 @@ body {
 
 
 .home-button {
-  position: absolute;
-  top: 665px;
+  position: relative;
+  top: 653px;
   left: 156px;
   height: 40px;
   width: 40px;
@@ -131,15 +129,14 @@ body {
 
 
 .lock-button {
-  height: 60px;
-  width: 1px;
-  position: absolute;
+  height: 7%;
+  width: 1%;
+  position:relative;
   top: 137px;
-  left: 349px;
+  left: 303px;
   background-color: black;
   border: none;
 
-  z-index: 0;
 }
 
 /* Style rules for Photo App*/
@@ -158,7 +155,7 @@ body {
   height: 590px;
   width: 325px;
   border: black 1px solid;
-  margin: 60px auto;
+  margin: 10px auto;
   border-radius: 1px;
   background-size: contain;
   background-color: rgba(250, 247, 247, 0.978);
@@ -309,17 +306,16 @@ textarea {
 
 #playlist-footer {
   height: 60px;
-  width: 92.1%;
+  width: 100%;
   background-color: rgb(50, 49, 49);
-  position: absolute;
-  top: 600px;
+  position: relative;
 }
 
 #playlist-footer img {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  position: absolute;
+  position: relative;
   left: 138px;
   top: 4px
 }
@@ -346,7 +342,7 @@ textarea {
   height: 590px;
   width: 325px;
   border: black 1px solid;
-  margin: 60px auto;
+  margin: 10px auto;
   border-radius: 1px;
   background-size: contain;
   background-color: rgb(28, 28, 28);
