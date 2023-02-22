@@ -1,0 +1,403 @@
+body {
+  background-color: salmon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#phone {
+  height: 190.08mm;
+  width: 93.2mm;
+  border: black 2px solid;
+  margin: 50px auto;
+  border-radius: 26px;
+  background-color: black;
+  position: absolute;
+  left: 580px;
+}
+
+#screen {
+  height: 590px;
+  width: 325px;
+  border: black 1px solid;
+  margin: 60px auto;
+  border-radius: 1px;
+  background-image: url(images/wallpaper.jpeg);
+  background-size: cover;
+
+}
+
+.lockscreen-shade {
+  height: 560;
+  width: 325px;
+  background: black;
+  overflow: hidden;
+  color: white;
+}
+
+#lockscreen {
+  height: 590px;
+  width: 325px;
+  border: black 1px solid;
+  margin: 60px auto;
+  border-radius: 1px;
+  background-image: url(images/wallpaper.jpeg);
+  background-size: cover;
+  opacity: 0.5;
+
+}
+
+.clock {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 55px;
+  top: 110px;
+  left: 58px;
+
+}
+
+#unlock-prompt{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: absolute;
+  top: 600px;
+  left: 95px;
+  
+}
+
+.grid-container {
+  padding: 2px;
+  margin: 10px auto auto;
+  display: grid;
+  height: 510px;
+  column-gap: 3px;
+  row-gap: -40px;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item img {
+  height: 50px;
+  width: 50px;
+  padding: none;
+  margin: none;
+}
+
+.icon-labels {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+
+}
+
+#dock {
+  display: inline-grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  height: 80px;
+  width: 325px;
+  margin: none;
+  border-radius: 1px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dock-icon img {
+  height: 50px;
+  width: 50px;
+  margin: 8px auto auto;
+}
+
+
+.home-button {
+  position: absolute;
+  top: 665px;
+  left: 156px;
+  height: 40px;
+  width: 40px;
+  border: black 1px solid;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.home-button:hover {
+  cursor: pointer;
+}
+
+
+.lock-button {
+  height: 60px;
+  width: 1px;
+  position: absolute;
+  top: 137px;
+  left: 349px;
+  background-color: black;
+  border: none;
+
+  z-index: 0;
+}
+
+/* Style rules for Photo App*/
+
+#dock-without {
+  display: inline-grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  height: 60px;
+  width: 270px;
+  margin: auto;
+  color: transparent;
+}
+
+#photo-screen {
+  height: 590px;
+  width: 325px;
+  border: black 1px solid;
+  margin: 60px auto;
+  border-radius: 1px;
+  background-size: contain;
+  background-color: rgba(250, 247, 247, 0.978);
+
+}
+
+.photogrid {
+  display: grid;
+  height: 590px;
+  width: 325px;
+  row-gap: 0;
+  column-gap: 3px;
+  grid-template-columns: auto auto auto auto;
+  overflow: scroll;
+}
+
+.photogrid .grid-item img {
+  height: 79px;
+  width: 79px;
+  padding: 0;
+  margin: 0;
+}
+
+/*Style rules for contact page*/
+#contact-banner {
+  height: 12%;
+  width: 100%;
+  background-color: rgb(210, 208, 208);
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+#contact-banner img {
+  position: relative;
+  height: 43px;
+  width: 43px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+#contact-name {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: -13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#message-bubble {
+  height: 20px;
+  width: 140px;
+  background-color: #d8d8d8;
+  color: black;
+  text-align: center;
+  padding: 3px 10px 0 3px;
+  font-size: 13px;
+  border-radius: 15px;
+  position: relative;
+  top: 20px;
+  left: 13px;
+}
+/*Textbox*/
+
+textarea {
+  position: relative;
+  top: 400px;
+  left: 5px;
+  border-radius: 10px;
+}
+
+#submit {
+  position: relative;
+  top: 285px;
+  left: 270px;
+}
+
+
+/*Style rules for weather app*/
+
+.weather {
+  height: 590px;
+  width: 325px;
+  overflow: scroll;
+  background-color: rgb(54, 53, 53);
+}
+
+.weather #break {
+  border: 1px solid black
+}
+
+/*Style rules for music app*/
+
+.playlist {
+  background-color: black;
+}
+
+#playlist-header {
+  height: 65px;
+  width: 100%;
+  margin-top: -91px;
+  background-color: rgb(50, 49, 49);
+  position: sticky;
+}
+
+#playlist-header h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+  padding-left: 7px;
+}
+
+#playlist-header img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 6px;
+  left: 260px;
+  border-radius: 100%;
+}
+
+#playlist-list {
+  
+}
+
+#playlist-cell {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#playlist-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+#playlist-list img {
+  height: 49px;
+  width: 49px;
+  display: inline-block;
+  float: right;
+}
+
+#playlist-footer {
+  height: 60px;
+  width: 92.1%;
+  background-color: rgb(50, 49, 49);
+  position: absolute;
+  top: 600px;
+}
+
+#playlist-footer img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  left: 138px;
+  top: 4px
+}
+
+#button-div {
+  height: 30px;
+  width: 90px;
+  margin: auto;
+  padding-top: 8px;
+}
+
+#back-button {
+  height: 30px;
+  width: 90px;
+  background-color: #1DB954;
+  color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 30px;
+
+}
+
+#music-screen {
+  height: 590px;
+  width: 325px;
+  border: black 1px solid;
+  margin: 60px auto;
+  border-radius: 1px;
+  background-size: contain;
+  background-color: rgb(28, 28, 28);
+
+}
+
+/*Style Rules for calculator app*/
+.calc {
+  max-width: 400px;
+  
+}
+
+#calcdisplay {
+  text-align: right;
+  height: 52px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.calcbuttons {
+  display: grid;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(63, 62, 62);
+  color: white;
+}
+
+.calcbuttons > div {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+.calcbuttons {
+  border: 0.5px solid #999;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#equal {
+  background-color: rgb(255, 183, 0);
+  color: white;
+}
+
+.calcbutton:hover:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
