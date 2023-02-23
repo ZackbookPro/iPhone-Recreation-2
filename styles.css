@@ -139,6 +139,10 @@ body {
 
 }
 
+.lock-button:hover {
+  cursor: pointer;
+}
+
 /* Style rules for Photo App*/
 
 #dock-without {
@@ -337,6 +341,11 @@ textarea {
   border-radius: 30px;
 
 }
+
+#back-button:hover {
+  cursor: pointer;
+}
+
 
 #music-screen {
   height: 590px;
